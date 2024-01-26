@@ -11,23 +11,25 @@ import Experience from "./components/functionalcomponents/experience";
 import Login from "./components/functionalcomponents/Login";
 import Home from "./components/functionalcomponents/Home";
 import Footer from "./components/functionalcomponents/Footer";
+import NewUser from './components/functionalcomponents/NewUser';
 function App() {
   return (
     <div className="App">
       {/* <PropsComponent name="KEC" course="PNR" /> */}
       <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/home" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/experience" element={<Experience />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-      </Routes>
+        <NavBar />
+        <Routes>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/experience" element={<Experience />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/NewUser" element={<NewUser />}></Route>
+        </Routes>
       </BrowserRouter>
 
       {/*<header className="App-header">}
         {/* <StateComponent /> */}
-        {/*<img src={logo} className="App-logo" alt="logo" />
+      {/*<img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -42,7 +44,7 @@ function App() {
       </header> 
       */}
       <div>
-      <Footer />
+        <Footer />
       </div>
     </div>
   );
